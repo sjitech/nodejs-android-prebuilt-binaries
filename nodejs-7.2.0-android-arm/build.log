@@ -1,0 +1,1228 @@
+[BUILD] android-gcc-toolchain arm <<< "./configure --dest-cpu=arm    --dest-os=android --without-snapshot --without-inspector --without-intl && make"
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-E' \
+$___  '-P' \
+$___  '-x' \
+$___  'c++' \
+$___  '-'
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-gcc' \
+$___  '-E' \
+$___  '-P' \
+$___  '-x' \
+$___  'c' \
+$___  '-'
+creating  ./icu_config.gypi
+{ 'target_defaults': { 'cflags': [],
+                       'default_configuration': 'Release',
+                       'defines': [],
+                       'include_dirs': [],
+                       'libraries': []},
+  'variables': { 'OS': 'android',
+                 'arm_float_abi': 'default',
+                 'arm_fpu': 'vfpv3',
+                 'arm_thumb': 0,
+                 'arm_version': '7',
+                 'asan': 0,
+                 'coverage': 'false',
+                 'debug_devtools': 'node',
+                 'force_dynamic_crt': 0,
+                 'gas_version': 0,
+                 'host_arch': 'arm',
+                 'icu_small': 'false',
+                 'node_byteorder': 'little',
+                 'node_enable_d8': 'false',
+                 'node_enable_v8_vtunejit': 'false',
+                 'node_install_npm': 'true',
+                 'node_module_version': 51,
+                 'node_no_browser_globals': 'false',
+                 'node_prefix': '/usr/local',
+                 'node_release_urlbase': '',
+                 'node_shared': 'false',
+                 'node_shared_cares': 'false',
+                 'node_shared_http_parser': 'false',
+                 'node_shared_libuv': 'false',
+                 'node_shared_openssl': 'false',
+                 'node_shared_zlib': 'false',
+                 'node_tag': '',
+                 'node_use_bundled_v8': 'true',
+                 'node_use_dtrace': 'false',
+                 'node_use_etw': 'false',
+                 'node_use_lttng': 'false',
+                 'node_use_openssl': 'true',
+                 'node_use_perfctr': 'false',
+                 'node_use_v8_platform': 'true',
+                 'openssl_fips': '',
+                 'openssl_no_asm': 0,
+                 'shlib_suffix': 'so.51',
+                 'target_arch': 'arm',
+                 'v8_enable_gdbjit': 0,
+                 'v8_enable_i18n_support': 0,
+                 'v8_inspector': 'false',
+                 'v8_no_strict_aliasing': 1,
+                 'v8_optimized_debug': 0,
+                 'v8_random_seed': 0,
+                 'v8_use_snapshot': 'false',
+                 'want_separate_host_toolset': 0,
+                 'want_separate_host_toolset_mkpeephole': 0}}
+creating  ./config.gypi
+creating  ./config.mk
+make -C out BUILDTYPE=Release V=1
+make[1]: Entering directory `/home/devuser/node/out'
+  g++ '-D_GLIBCXX_USE_C99_MATH' -I../deps/gtest -I../deps/gtest/include  -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -O3 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-death-test.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-death-test.o ../deps/gtest/src/gtest-death-test.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/gtest' \
+$___  '-I../deps/gtest/include' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-Wno-missing-field-initializers' \
+$___  '-O3' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-death-test.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-death-test.o' \
+$___  '../deps/gtest/src/gtest-death-test.cc'
+  g++ '-D_GLIBCXX_USE_C99_MATH' -I../deps/gtest -I../deps/gtest/include  -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -O3 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-filepath.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-filepath.o ../deps/gtest/src/gtest-filepath.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/gtest' \
+$___  '-I../deps/gtest/include' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-Wno-missing-field-initializers' \
+$___  '-O3' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-filepath.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-filepath.o' \
+$___  '../deps/gtest/src/gtest-filepath.cc'
+  g++ '-D_GLIBCXX_USE_C99_MATH' -I../deps/gtest -I../deps/gtest/include  -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -O3 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-port.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-port.o ../deps/gtest/src/gtest-port.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/gtest' \
+$___  '-I../deps/gtest/include' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-Wno-missing-field-initializers' \
+$___  '-O3' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-port.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-port.o' \
+$___  '../deps/gtest/src/gtest-port.cc'
+  g++ '-D_GLIBCXX_USE_C99_MATH' -I../deps/gtest -I../deps/gtest/include  -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -O3 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-printers.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-printers.o ../deps/gtest/src/gtest-printers.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/gtest' \
+$___  '-I../deps/gtest/include' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-Wno-missing-field-initializers' \
+$___  '-O3' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-printers.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-printers.o' \
+$___  '../deps/gtest/src/gtest-printers.cc'
+  g++ '-D_GLIBCXX_USE_C99_MATH' -I../deps/gtest -I../deps/gtest/include  -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -O3 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-test-part.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-test-part.o ../deps/gtest/src/gtest-test-part.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/gtest' \
+$___  '-I../deps/gtest/include' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-Wno-missing-field-initializers' \
+$___  '-O3' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-test-part.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-test-part.o' \
+$___  '../deps/gtest/src/gtest-test-part.cc'
+  g++ '-D_GLIBCXX_USE_C99_MATH' -I../deps/gtest -I../deps/gtest/include  -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -O3 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-typed-test.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-typed-test.o ../deps/gtest/src/gtest-typed-test.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/gtest' \
+$___  '-I../deps/gtest/include' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-Wno-missing-field-initializers' \
+$___  '-O3' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-typed-test.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-typed-test.o' \
+$___  '../deps/gtest/src/gtest-typed-test.cc'
+  g++ '-D_GLIBCXX_USE_C99_MATH' -I../deps/gtest -I../deps/gtest/include  -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -O3 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest.o ../deps/gtest/src/gtest.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/gtest' \
+$___  '-I../deps/gtest/include' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-Wno-missing-field-initializers' \
+$___  '-O3' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest.o' \
+$___  '../deps/gtest/src/gtest.cc'
+  g++ '-D_GLIBCXX_USE_C99_MATH' -I../deps/gtest -I../deps/gtest/include  -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -O3 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest_main.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest_main.o ../deps/gtest/src/gtest_main.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/gtest' \
+$___  '-I../deps/gtest/include' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-Wno-missing-field-initializers' \
+$___  '-O3' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest_main.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest_main.o' \
+$___  '../deps/gtest/src/gtest_main.cc'
+  rm -f /home/devuser/node/out/Release/obj.target/deps/gtest/libgtest.a && ar crsT /home/devuser/node/out/Release/obj.target/deps/gtest/libgtest.a /home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-death-test.o /home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-filepath.o /home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-port.o /home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-printers.o /home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-test-part.o /home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-typed-test.o /home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest.o /home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest_main.o
+$___ '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-ar' \
+$___  'crsT' \
+$___  '/home/devuser/node/out/Release/obj.target/deps/gtest/libgtest.a' \
+$___  '/home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-death-test.o' \
+$___  '/home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-filepath.o' \
+$___  '/home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-port.o' \
+$___  '/home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-printers.o' \
+$___  '/home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-test-part.o' \
+$___  '/home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest-typed-test.o' \
+$___  '/home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest.o' \
+$___  '/home/devuser/node/out/Release/obj.target/gtest/deps/gtest/src/gtest_main.o'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8 -I../. -I../deps/v8/include  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/default-platform.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/default-platform.o ../deps/v8/src/libplatform/default-platform.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-I../.' \
+$___  '-I../deps/v8/include' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/default-platform.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/default-platform.o' \
+$___  '../deps/v8/src/libplatform/default-platform.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8 -I../. -I../deps/v8/include  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/task-queue.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/task-queue.o ../deps/v8/src/libplatform/task-queue.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-I../.' \
+$___  '-I../deps/v8/include' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/task-queue.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/task-queue.o' \
+$___  '../deps/v8/src/libplatform/task-queue.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8 -I../. -I../deps/v8/include  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-buffer.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-buffer.o ../deps/v8/src/libplatform/tracing/trace-buffer.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-I../.' \
+$___  '-I../deps/v8/include' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-buffer.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-buffer.o' \
+$___  '../deps/v8/src/libplatform/tracing/trace-buffer.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8 -I../. -I../deps/v8/include  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-config.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-config.o ../deps/v8/src/libplatform/tracing/trace-config.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-I../.' \
+$___  '-I../deps/v8/include' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-config.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-config.o' \
+$___  '../deps/v8/src/libplatform/tracing/trace-config.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8 -I../. -I../deps/v8/include  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-object.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-object.o ../deps/v8/src/libplatform/tracing/trace-object.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-I../.' \
+$___  '-I../deps/v8/include' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-object.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-object.o' \
+$___  '../deps/v8/src/libplatform/tracing/trace-object.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8 -I../. -I../deps/v8/include  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-writer.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-writer.o ../deps/v8/src/libplatform/tracing/trace-writer.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-I../.' \
+$___  '-I../deps/v8/include' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-writer.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-writer.o' \
+$___  '../deps/v8/src/libplatform/tracing/trace-writer.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8 -I../. -I../deps/v8/include  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/tracing-controller.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/tracing-controller.o ../deps/v8/src/libplatform/tracing/tracing-controller.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-I../.' \
+$___  '-I../deps/v8/include' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/tracing-controller.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/tracing-controller.o' \
+$___  '../deps/v8/src/libplatform/tracing/tracing-controller.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8 -I../. -I../deps/v8/include  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/worker-thread.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/worker-thread.o ../deps/v8/src/libplatform/worker-thread.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-I../.' \
+$___  '-I../deps/v8/include' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/worker-thread.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/worker-thread.o' \
+$___  '../deps/v8/src/libplatform/worker-thread.cc'
+  rm -f /home/devuser/node/out/Release/obj.target/deps/v8/src/libv8_libplatform.a && ar crsT /home/devuser/node/out/Release/obj.target/deps/v8/src/libv8_libplatform.a /home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/default-platform.o /home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/task-queue.o /home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-buffer.o /home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-config.o /home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-object.o /home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-writer.o /home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/tracing-controller.o /home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/worker-thread.o
+$___ '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-ar' \
+$___  'crsT' \
+$___  '/home/devuser/node/out/Release/obj.target/deps/v8/src/libv8_libplatform.a' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/default-platform.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/task-queue.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-buffer.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-config.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-object.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/trace-writer.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/tracing/tracing-controller.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libplatform/deps/v8/src/libplatform/worker-thread.o'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/accounting-allocator.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/accounting-allocator.o ../deps/v8/src/base/accounting-allocator.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/accounting-allocator.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/accounting-allocator.o' \
+$___  '../deps/v8/src/base/accounting-allocator.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/atomicops_internals_x86_gcc.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/atomicops_internals_x86_gcc.o ../deps/v8/src/base/atomicops_internals_x86_gcc.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/atomicops_internals_x86_gcc.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/atomicops_internals_x86_gcc.o' \
+$___  '../deps/v8/src/base/atomicops_internals_x86_gcc.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/bits.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/bits.o ../deps/v8/src/base/bits.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/bits.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/bits.o' \
+$___  '../deps/v8/src/base/bits.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/cpu.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/cpu.o ../deps/v8/src/base/cpu.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/cpu.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/cpu.o' \
+$___  '../deps/v8/src/base/cpu.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/division-by-constant.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/division-by-constant.o ../deps/v8/src/base/division-by-constant.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/division-by-constant.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/division-by-constant.o' \
+$___  '../deps/v8/src/base/division-by-constant.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/debug/stack_trace.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/debug/stack_trace.o ../deps/v8/src/base/debug/stack_trace.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/debug/stack_trace.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/debug/stack_trace.o' \
+$___  '../deps/v8/src/base/debug/stack_trace.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/file-utils.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/file-utils.o ../deps/v8/src/base/file-utils.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/file-utils.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/file-utils.o' \
+$___  '../deps/v8/src/base/file-utils.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/functional.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/functional.o ../deps/v8/src/base/functional.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/functional.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/functional.o' \
+$___  '../deps/v8/src/base/functional.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/ieee754.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/ieee754.o ../deps/v8/src/base/ieee754.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/ieee754.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/ieee754.o' \
+$___  '../deps/v8/src/base/ieee754.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/logging.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/logging.o ../deps/v8/src/base/logging.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/logging.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/logging.o' \
+$___  '../deps/v8/src/base/logging.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/once.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/once.o ../deps/v8/src/base/once.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/once.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/once.o' \
+$___  '../deps/v8/src/base/once.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/time.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/time.o ../deps/v8/src/base/platform/time.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/time.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/time.o' \
+$___  '../deps/v8/src/base/platform/time.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/condition-variable.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/condition-variable.o ../deps/v8/src/base/platform/condition-variable.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/condition-variable.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/condition-variable.o' \
+$___  '../deps/v8/src/base/platform/condition-variable.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/mutex.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/mutex.o ../deps/v8/src/base/platform/mutex.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/mutex.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/mutex.o' \
+$___  '../deps/v8/src/base/platform/mutex.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/semaphore.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/semaphore.o ../deps/v8/src/base/platform/semaphore.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/semaphore.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/semaphore.o' \
+$___  '../deps/v8/src/base/platform/semaphore.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/sys-info.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/sys-info.o ../deps/v8/src/base/sys-info.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/sys-info.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/sys-info.o' \
+$___  '../deps/v8/src/base/sys-info.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/utils/random-number-generator.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/utils/random-number-generator.o ../deps/v8/src/base/utils/random-number-generator.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/utils/random-number-generator.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/utils/random-number-generator.o' \
+$___  '../deps/v8/src/base/utils/random-number-generator.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/debug/stack_trace_android.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/debug/stack_trace_android.o ../deps/v8/src/base/debug/stack_trace_android.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/debug/stack_trace_android.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/debug/stack_trace_android.o' \
+$___  '../deps/v8/src/base/debug/stack_trace_android.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/platform-posix.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/platform-posix.o ../deps/v8/src/base/platform/platform-posix.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/platform-posix.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/platform-posix.o' \
+$___  '../deps/v8/src/base/platform/platform-posix.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/platform-linux.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/platform-linux.o ../deps/v8/src/base/platform/platform-linux.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/platform-linux.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/platform-linux.o' \
+$___  '../deps/v8/src/base/platform/platform-linux.cc'
+  rm -f /home/devuser/node/out/Release/obj.target/deps/v8/src/libv8_libbase.a && ar crsT /home/devuser/node/out/Release/obj.target/deps/v8/src/libv8_libbase.a /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/accounting-allocator.o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/atomicops_internals_x86_gcc.o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/bits.o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/cpu.o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/division-by-constant.o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/debug/stack_trace.o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/file-utils.o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/functional.o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/ieee754.o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/logging.o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/once.o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/time.o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/condition-variable.o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/mutex.o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/semaphore.o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/sys-info.o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/utils/random-number-generator.o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/debug/stack_trace_android.o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/platform-posix.o /home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/platform-linux.o
+$___ '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-ar' \
+$___  'crsT' \
+$___  '/home/devuser/node/out/Release/obj.target/deps/v8/src/libv8_libbase.a' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/accounting-allocator.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/atomicops_internals_x86_gcc.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/bits.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/cpu.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/division-by-constant.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/debug/stack_trace.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/file-utils.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/functional.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/ieee754.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/logging.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/once.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/time.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/condition-variable.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/mutex.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/semaphore.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/sys-info.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/utils/random-number-generator.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/debug/stack_trace_android.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/platform-posix.o' \
+$___  '/home/devuser/node/out/Release/obj.target/v8_libbase/deps/v8/src/base/platform/platform-linux.o'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/mkpeephole/deps/v8/src/interpreter/bytecodes.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/mkpeephole/deps/v8/src/interpreter/bytecodes.o ../deps/v8/src/interpreter/bytecodes.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/mkpeephole/deps/v8/src/interpreter/bytecodes.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/mkpeephole/deps/v8/src/interpreter/bytecodes.o' \
+$___  '../deps/v8/src/interpreter/bytecodes.cc'
+  g++ '-DV8_TARGET_ARCH_ARM' '-DCAN_USE_ARMV7_INSTRUCTIONS' '-DCAN_USE_VFP3_INSTRUCTIONS' '-DCAN_USE_VFP32DREGS' '-DENABLE_DISASSEMBLER' '-D_GLIBCXX_USE_C99_MATH' -I../deps/v8  -Wall -Wextra -Wno-unused-parameter -march=armv7-a -mfpu=vfpv3 -marm -fdata-sections -ffunction-sections -O2 -fno-omit-frame-pointer -fPIE -fno-rtti -fno-exceptions -std=gnu++0x -MMD -MF /home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/mkpeephole/deps/v8/src/interpreter/mkpeephole.o.d.raw   -c -o /home/devuser/node/out/Release/obj.target/mkpeephole/deps/v8/src/interpreter/mkpeephole.o ../deps/v8/src/interpreter/mkpeephole.cc
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-DV8_TARGET_ARCH_ARM' \
+$___  '-DCAN_USE_ARMV7_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP3_INSTRUCTIONS' \
+$___  '-DCAN_USE_VFP32DREGS' \
+$___  '-DENABLE_DISASSEMBLER' \
+$___  '-D_GLIBCXX_USE_C99_MATH' \
+$___  '-I../deps/v8' \
+$___  '-Wall' \
+$___  '-Wextra' \
+$___  '-Wno-unused-parameter' \
+$___  '-march=armv7-a' \
+$___  '-mfpu=vfpv3' \
+$___  '-marm' \
+$___  '-fdata-sections' \
+$___  '-ffunction-sections' \
+$___  '-O2' \
+$___  '-fno-omit-frame-pointer' \
+$___  '-fPIE' \
+$___  '-fno-rtti' \
+$___  '-fno-exceptions' \
+$___  '-std=gnu++0x' \
+$___  '-MMD' \
+$___  '-MF' \
+$___  '/home/devuser/node/out/Release/.deps//home/devuser/node/out/Release/obj.target/mkpeephole/deps/v8/src/interpreter/mkpeephole.o.d.raw' \
+$___  '-c' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/obj.target/mkpeephole/deps/v8/src/interpreter/mkpeephole.o' \
+$___  '../deps/v8/src/interpreter/mkpeephole.cc'
+  g++ -rdynamic -fPIE -pie  -o /home/devuser/node/out/Release/mkpeephole -Wl,--start-group /home/devuser/node/out/Release/obj.target/mkpeephole/deps/v8/src/interpreter/bytecodes.o /home/devuser/node/out/Release/obj.target/mkpeephole/deps/v8/src/interpreter/mkpeephole.o /home/devuser/node/out/Release/obj.target/deps/v8/src/libv8_libbase.a -Wl,--end-group -llog
+$___ ccache '/home/devuser/ndk/std-toolchains/android-9-arm/bin/arm-linux-androideabi-g++' \
+$___  '-rdynamic' \
+$___  '-fPIE' \
+$___  '-pie' \
+$___  '-o' \
+$___  '/home/devuser/node/out/Release/mkpeephole' \
+$___  '-Wl,--start-group' \
+$___  '/home/devuser/node/out/Release/obj.target/mkpeephole/deps/v8/src/interpreter/bytecodes.o' \
+$___  '/home/devuser/node/out/Release/obj.target/mkpeephole/deps/v8/src/interpreter/mkpeephole.o' \
+$___  '/home/devuser/node/out/Release/obj.target/deps/v8/src/libv8_libbase.a' \
+$___  '-Wl,--end-group' \
+$___  '-llog'
+  LD_LIBRARY_PATH=/home/devuser/node/out/Release/lib.host:/home/devuser/node/out/Release/lib.target:$LD_LIBRARY_PATH; export LD_LIBRARY_PATH; cd ../deps/v8/src; mkdir -p /home/devuser/node/out/Release/obj.target/v8_base/geni; "/home/devuser/node/out/Release/mkpeephole" "/home/devuser/node/out/Release/obj.target/v8_base/geni/bytecode-peephole-table.cc"
+/home/devuser/node/out/Release/mkpeephole: 1: /home/devuser/node/out/Release/mkpeephole: Syntax error: word unexpected (expecting ")")
+make[1]: *** [/home/devuser/node/out/Release/obj.target/v8_base/geni/bytecode-peephole-table.cc] Error 2
+make[1]: Leaving directory `/home/devuser/node/out'
+make: *** [node] Error 2
